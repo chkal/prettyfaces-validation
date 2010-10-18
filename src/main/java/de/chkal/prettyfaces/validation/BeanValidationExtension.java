@@ -48,7 +48,9 @@ public class BeanValidationExtension implements ValidationExtension
       expressionFactory = ExpressionFactory.newInstance();
    }
 
-   @Override
+   /*
+    * @see com.ocpsoft.pretty.faces.spi.ValidationExtension#validate(javax.faces.context.FacesContext, com.ocpsoft.pretty.faces.config.mapping.UrlMapping, com.ocpsoft.pretty.faces.config.mapping.RequestParameter, java.lang.Object)
+    */
    public void validate(FacesContext facesContext, UrlMapping mapping, RequestParameter requestParameter, Object value)
          throws ValidatorException
    {
